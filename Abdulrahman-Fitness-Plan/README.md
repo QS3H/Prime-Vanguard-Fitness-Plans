@@ -4,7 +4,7 @@ A personalized, interactive web-based fitness plan designed for body recompositi
 
 ## Live Link
 
-[https://qs3h.github.io/Prime-Vanguard-Fitness-Plans/Abdulrahman-Fitness-Plan/](https://primevanguardfitnessplans.netlify.app/)
+[https://qs3h.github.io/Prime-Vanguard-Fitness-Plans/Abdulrahman-Fitness-Plan/](https://abdulrahmanfitnessplan.netlify.app/)
 
 ## Overview
 
