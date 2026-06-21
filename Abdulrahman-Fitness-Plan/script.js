@@ -12,7 +12,7 @@ const memberConfig = {
     dailyProtein: 185,
     dailyCarbs: 185,
     dailyFats: 67,
-    waterGoal: 4
+    waterGoal: 3
 };
 
 // ===== UTILITIES =====

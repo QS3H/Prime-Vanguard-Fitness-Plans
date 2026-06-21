@@ -4,7 +4,7 @@ A personalized, interactive web-based fitness plan designed for body recompositi
 
 ## Live Link
 
-[https://qs3h.github.io/Prime-Vanguard-Fitness-Plans/Abdulrahman-Fitness-Plan/](https://abdulrahmanfitnessplan.netlify.app/)
+[Abdulrahman-Fitness-Plan](https://abdulrahmanfitnessplan.netlify.app/)
 
 ## Overview
 
@@ -105,7 +105,7 @@ At 105 kg, full body training 3x/week is optimal because:
 1. **Form Over Ego**: Perfect technique is non-negotiable
 2. **Progressive Overload**: Add 1-2 reps or increase weight weekly
 3. **Rest Periods**: 60-90 seconds between sets
-4. **Hydration**: 4 liters of water daily
+4. **Hydration**: 3 liters of water daily
 5. **Consistency**: Never miss two workouts in a row
 
 ## Nutrition Plan
