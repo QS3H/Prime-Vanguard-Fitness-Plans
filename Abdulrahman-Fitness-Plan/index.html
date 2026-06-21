@@ -297,7 +297,8 @@
             <div class="progress-bar-bg">
                 <div class="progress-bar-fill" id="workoutProgressBar" style="width: 0%"></div>
             </div>
-            <div style="text-align: center; margin-top: 12px;">
+            <div style="text-align: center; margin-top: 12px; display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
+                <button class="timer-btn primary" type="button" data-action="open-timer" style="font-size: 12px; padding: 6px 12px;">⏱ Rest Timer</button>
                 <button class="timer-btn secondary" onclick="resetWorkoutProgress()" style="font-size: 12px; padding: 6px 12px;">Reset Progress</button>
             </div>
         </div>
@@ -423,7 +424,8 @@
             <div class="progress-bar-bg">
                 <div class="progress-bar-fill" id="workoutBProgressBar" style="width: 0%"></div>
             </div>
-            <div style="text-align: center; margin-top: 12px;">
+            <div style="text-align: center; margin-top: 12px; display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
+                <button class="timer-btn primary" type="button" data-action="open-timer" style="font-size: 12px; padding: 6px 12px;">⏱ Rest Timer</button>
                 <button class="timer-btn secondary" onclick="resetWorkoutBProgress()" style="font-size: 12px; padding: 6px 12px;">Reset Progress</button>
             </div>
         </div>
@@ -963,10 +965,6 @@
     
     <!-- Floating Action Panel -->
     <div class="fab-panel">
-        <button class="fab-btn" type="button" data-action="open-timer" title="Rest Timer" aria-label="Rest Timer">
-            ⏱
-            <span class="tooltip">Rest Timer</span>
-        </button>
         <button class="fab-btn" type="button" data-action="sync" title="Sync Progress" aria-label="Sync Progress">
             💾
             <span class="tooltip">Sync Progress</span>
