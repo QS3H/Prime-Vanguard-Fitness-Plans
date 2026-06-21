@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prime Vanguard 4-week fitness transformation plan — training, nutrition, and progress tracking for body recomposition.">
+    <meta name="theme-color" content="#0F172A">
+    <meta property="og:title" content="Prime Vanguard - 4-Week Fitness Transformation Plan">
+    <meta property="og:description" content="Build muscle, lose fat, and track your transformation with the Prime Vanguard brotherhood plan.">
+    <meta property="og:type" content="website">
+    <title>Prime Vanguard - 4-Week Fitness Transformation Plan</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.16/index.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="public/Prime_Vanguard-Logo.png">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Reading Progress Bar -->
+    <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav" aria-label="Primary">
+        <div class="nav-inner">
+            <div class="nav-logo" data-action="scroll-cover" tabindex="0" role="button">PRIME VANGUARD</div>
+            <div class="nav-links" id="navLinks">
+                <a href="#analysis" data-section="analysis">Analysis</a>
+                <a href="#training" data-section="training">Training</a>
+                <a href="#workouts" data-section="workouts">Workouts</a>
+                <a href="#nutrition" data-section="nutrition">Nutrition</a>
+                <a href="#tracking" data-section="tracking">Tracking</a>
+            </div>
+            <div class="nav-actions">
+                <button class="nav-btn" type="button" data-action="print">Print</button>
+                <button class="nav-btn" type="button" data-action="export">Export</button>
+                <button class="nav-btn primary" type="button" data-action="sync">Sync</button>
+            </div>
+            <button class="nav-toggle" type="button" data-action="toggle-mobile-menu" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">☰</button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+        <button class="mobile-menu-close" type="button" data-action="toggle-mobile-menu" aria-label="Close menu">✕</button>
+        <a href="#analysis" data-action="toggle-mobile-menu">Analysis</a>
+        <a href="#training" data-action="toggle-mobile-menu">Training</a>
+        <a href="#workouts" data-action="toggle-mobile-menu">Workouts</a>
+        <a href="#nutrition" data-action="toggle-mobile-menu">Nutrition</a>
+        <a href="#tracking" data-action="toggle-mobile-menu">Tracking</a>
+        <button class="mobile-menu-action" type="button" data-action="sync">Sync Progress</button>
+        <button class="mobile-menu-action" type="button" data-action="export">Export Progress</button>
+        <label class="mobile-menu-action mobile-menu-import">
+            Import Progress
+            <input type="file" id="importProgressInput" accept="application/json" class="visually-hidden">
+        </label>
+    </div>
+
+    <main id="main-content">
+    
+    <!-- Page 1: Cover -->
+    <section class="cover-page" id="cover">
+        <div class="cover-content">
+            <div class="logo">PRIME VANGUARD</div>
+            <div class="tagline">Physical Mastery Brotherhood</div>
+            
+            <h1 class="title">4-Week Fitness<br>Transformation Plan</h1>
+            <div class="subtitle">Build Muscle • Lose Fat • Forge Legacy</div>
+            
+            <div class="member-info">
+                <div class="member-name">Abdulrahman</div>
+                <div class="program-duration">Starting Weight: 105.0 kg | 4-Week Target: 100-101 kg | Long-Term: 88.4 kg</div>
+            </div>
+            
+            <div class="cover-quote">"Excellence is not an act, but a habit"</div>
+        </div>
+        <button class="scroll-indicator" type="button" data-action="scroll-analysis" aria-label="Scroll to next section">↓</button>
+    </section>
+
+    <!-- Page 2: Analysis & Goals -->
+    <section class="page" id="analysis">
+        <div class="page-header">
+            <h2 class="page-title">Body Analysis & Goals</h2>
+            <div class="page-subtitle">Your Starting Point & Transformation Targets</div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">InBody Analysis Summary</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Current Weight</div>
+                    <div class="stat-value" data-target="105.0" data-suffix=" kg">0 kg</div>
+                    <div class="stat-change">Target: -16.6 kg</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Body Fat %</div>
+                    <div class="stat-value" data-target="28.5" data-suffix="%">0%</div>
+                    <div class="stat-change">Target: 18-20%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Skeletal Muscle</div>
+                    <div class="stat-value" data-target="42.8" data-suffix=" kg">0 kg</div>
+                    <div class="stat-change">Maintain/Grow</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Basal Metabolic Rate</div>
+                    <div class="stat-value" data-target="1992" data-suffix=" kcal">0 kcal</div>
+                    <div class="stat-change">Excellent!</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">Critical Areas</h3>
+            <div class="warning">
+                <strong>Visceral Fat Level: 13</strong> (Normal: 1-9)<br>
+                This is fat stored around your organs. Our primary health target is to reduce this to below 9 through consistent training and nutrition.
+            </div>
+            <div class="success">
+                <strong>Your Superpower: High BMR</strong><br>
+                Your body burns 1,992 calories at rest! This is your built-in fat-burning engine. We will leverage this through muscle preservation and strategic cardio.
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">4-Week Transformation Goals</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Goal</th>
+                            <th>Current</th>
+                            <th>Target</th>
+                            <th>Strategy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Weight Loss</strong></td>
+                            <td>105.0 kg</td>
+                            <td>100-101 kg</td>
+                            <td>1-1.5 kg/week</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Visceral Fat</strong></td>
+                            <td>Level 13</td>
+                            <td>Level 11-12</td>
+                            <td>LISS cardio + deficit</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Muscle Mass</strong></td>
+                            <td>42.8 kg</td>
+                            <td>43+ kg</td>
+                            <td>High protein + strength</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Body Fat %</strong></td>
+                            <td>28.5%</td>
+                            <td>26-27%</td>
+                            <td>Recomposition</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="highlight-box">
+            <div class="highlight-title">Important Note</div>
+            This is a <strong>body recomposition</strong> program. We're not just losing weight—we're losing FAT while preserving (and building) MUSCLE. This requires strict adherence to both training and nutrition.
+        </div>
+    </section>
+
+    <!-- Page 3: Training Principles -->
+    <section class="page" id="training">
+        <div class="page-header">
+            <h2 class="page-title">Training Philosophy</h2>
+            <div class="page-subtitle">The Prime Vanguard Approach to Physical Mastery</div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">Why Full Body Workouts?</h3>
+            <p style="margin-bottom: 16px; color: var(--pv-text-dark); font-size: 15px;">
+                As a beginner at 105 kg, full body training 3x/week is the most efficient path to your goals:
+            </p>
+            <div class="two-column">
+                <div class="info-box">
+                    <strong>✓ Maximizes Fat Loss</strong><br>
+                    More muscles engaged = more calories burned per session
+                </div>
+                <div class="info-box">
+                    <strong>✓ Faster Skill Learning</strong><br>
+                    Practice movements 3x/week vs 1x/week
+                </div>
+                <div class="info-box">
+                    <strong>✓ Joint Protection</strong><br>
+                    Lower volume per session, better recovery
+                </div>
+                <div class="info-box">
+                    <strong>✓ Hormonal Optimization</strong><br>
+                    Compound lifts boost testosterone & growth hormone
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">The 5 Non-Negotiable Rules</h3>
+            <div class="principle-box">
+                <ol style="list-style: decimal; padding-left: 20px; margin: 0;">
+                    <li style="padding: 8px 0; padding-left: 8px;"><strong>Form Over Ego:</strong> Perfect technique is non-negotiable. Leave your ego at the door.</li>
+                    <li style="padding: 8px 0; padding-left: 8px;"><strong>Progressive Overload:</strong> Every week, add 1-2 reps or increase weight slightly.</li>
+                    <li style="padding: 8px 0; padding-left: 8px;"><strong>Rest Periods:</strong> 60-90 seconds between sets. Use a timer.</li>
+                    <li style="padding: 8px 0; padding-left: 8px;"><strong>Hydration:</strong> 4 liters of water daily. Your metabolism depends on it.</li>
+                    <li style="padding: 8px 0; padding-left: 8px;"><strong>Consistency:</strong> Never miss two workouts in a row. Ever.</li>
+                </ol>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">Weekly Schedule</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Activity</th>
+                            <th>Duration</th>
+                            <th>Focus</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Monday</strong></td>
+                            <td>Full Body Workout A</td>
+                            <td>60 min</td>
+                            <td>Strength + Compound</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tuesday</strong></td>
+                            <td>LISS Cardio + Core</td>
+                            <td>30 min</td>
+                            <td>Fat Burning</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Wednesday</strong></td>
+                            <td>Full Body Workout B</td>
+                            <td>60 min</td>
+                            <td>Strength + Hypertrophy</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Thursday</strong></td>
+                            <td>LISS Cardio + Core</td>
+                            <td>30 min</td>
+                            <td>Active Recovery</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Friday</strong></td>
+                            <td>Full Body Workout A</td>
+                            <td>60 min</td>
+                            <td>Strength + Power</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Saturday</strong></td>
+                            <td>Rest / Light Walk</td>
+                            <td>-</td>
+                            <td>Recovery</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sunday</strong></td>
+                            <td>Rest + Weekly Check-in</td>
+                            <td>-</td>
+                            <td>Reflection</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="highlight-box">
+            <div class="highlight-title">🎯 The Prime Vanguard Mindset</div>
+            "You are not training to look good for summer. You are training to build the physical armor required to lead, protect, and leave a legacy. Every rep is a brick in your fortress."
+        </div>
+    </section>
+
+    <!-- Page 4: Workout Program -->
+    <section class="page" id="workouts">
+        <div class="page-header">
+            <h2 class="page-title">The Workout Program</h2>
+            <div class="page-subtitle">Weeks 1-4: Foundation Phase</div>
+        </div>
+        
+        <!-- Workout Progress -->
+        <div class="workout-progress">
+            <div class="progress-header">
+                <span>Workout A Progress</span>
+                <span id="workoutProgressText">0/6 exercises</span>
+            </div>
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="workoutProgressBar" style="width: 0%"></div>
+            </div>
+            <div style="text-align: center; margin-top: 12px;">
+                <button class="timer-btn secondary" onclick="resetWorkoutProgress()" style="font-size: 12px; padding: 6px 12px;">Reset Progress</button>
+            </div>
+        </div>
+        
+        <div class="workout-day">
+            <div class="workout-day-header">
+                <span>WORKOUT A <span class="badge">Monday & Friday</span></span>
+                <span>60 Minutes</span>
+            </div>
+            <ul class="exercise-list" id="workoutA">
+                <li class="exercise-item" data-exercise="1" role="button" tabindex="0" aria-pressed="false">
+                    <div class="exercise-check" onclick="toggleExercise(this, event)" aria-hidden="true">✓</div>
+                    <div style="flex: 1;">
+                        <div class="exercise-name" contenteditable="true" data-workout="A" data-exercise="1" onblur="saveExerciseName(this)">1. Leg Press</div>
+                        <div class="exercise-details">Feet shoulder-width, control descent</div>
+                    </div>
+                    <div class="exercise-meta">
+                        <div class="reps">3 sets × 10-12 reps</div>
+                        <div class="rest">Rest: 90s</div>
+                        <div class="weight-input-container">
+                            <input type="number" class="weight-input" data-workout="A" data-exercise="1" placeholder="kg" onchange="saveExerciseWeight(this)" onclick="event.stopPropagation()">
+                            <span class="weight-unit">kg</span>
+                            <div class="weight-history-indicator" id="weightIndicator-A-1"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="exercise-item" data-exercise="2" role="button" tabindex="0" aria-pressed="false">
+                    <div class="exercise-check" onclick="toggleExercise(this, event)">✓</div>
+                    <div style="flex: 1;">
+                        <div class="exercise-name" contenteditable="true" data-workout="A" data-exercise="2" onblur="saveExerciseName(this)">2. Incline Dumbbell Press</div>
+                        <div class="exercise-details">Shoulders pinned back, squeeze at top</div>
+                    </div>
+                    <div class="exercise-meta">
+                        <div class="reps">3 sets × 10-12 reps</div>
+                        <div class="rest">Rest: 90s</div>
+                        <div class="weight-input-container">
+                            <input type="number" class="weight-input" data-workout="A" data-exercise="2" placeholder="kg" onchange="saveExerciseWeight(this)" onclick="event.stopPropagation()">
+                            <span class="weight-unit">kg</span>
+                            <div class="weight-history-indicator" id="weightIndicator-A-2"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="exercise-item" data-exercise="3" role="button" tabindex="0" aria-pressed="false">
+                    <div class="exercise-check" onclick="toggleExercise(this, event)" aria-hidden="true">✓</div>
+                    <div style="flex: 1;">
+                        <div class="exercise-name" contenteditable="true" data-workout="A" data-exercise="3" onblur="saveExerciseName(this)">3. Lat Pulldown</div>
+                        <div class="exercise-details">Pull to upper chest, squeeze shoulder blades</div>
+                    </div>
+                    <div class="exercise-meta">
+                        <div class="reps">3 sets × 10-12 reps</div>
+                        <div class="rest">Rest: 90s</div>
+                        <div class="weight-input-container">
+                            <input type="number" class="weight-input" data-workout="A" data-exercise="3" placeholder="kg" onchange="saveExerciseWeight(this)" onclick="event.stopPropagation()">
+                            <span class="weight-unit">kg</span>
+                            <div class="weight-history-indicator" id="weightIndicator-A-3"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="exercise-item" data-exercise="4" role="button" tabindex="0" aria-pressed="false">
+                    <div class="exercise-check" onclick="toggleExercise(this, event)" aria-hidden="true">✓</div>
+                    <div style="flex: 1;">
+                        <div class="exercise-name" contenteditable="true" data-workout="A" data-exercise="4" onblur="saveExerciseName(this)">4. Dumbbell Overhead Press</div>
+                        <div class="exercise-details">Brace core, press straight up</div>
+                    </div>
+                    <div class="exercise-meta">
+                        <div class="reps">3 sets × 10-12 reps</div>
+                        <div class="rest">Rest: 90s</div>
+                        <div class="weight-input-container">
+                            <input type="number" class="weight-input" data-workout="A" data-exercise="4" placeholder="kg" onchange="saveExerciseWeight(this)" onclick="event.stopPropagation()">
+                            <span class="weight-unit">kg</span>
+                            <div class="weight-history-indicator" id="weightIndicator-A-4"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="exercise-item" data-exercise="5" role="button" tabindex="0" aria-pressed="false">
+                    <div class="exercise-check" onclick="toggleExercise(this, event)" aria-hidden="true">✓</div>
+                    <div style="flex: 1;">
+                        <div class="exercise-name" contenteditable="true" data-workout="A" data-exercise="5" onblur="saveExerciseName(this)">5. Barbell Bicep Curls</div>
+                        <div class="exercise-details">Elbows glued to sides, no swinging</div>
+                    </div>
+                    <div class="exercise-meta">
+                        <div class="reps">2 sets × 12-15 reps</div>
+                        <div class="rest">Rest: 60s</div>
+                        <div class="weight-input-container">
+                            <input type="number" class="weight-input" data-workout="A" data-exercise="5" placeholder="kg" onchange="saveExerciseWeight(this)" onclick="event.stopPropagation()">
+                            <span class="weight-unit">kg</span>
+                            <div class="weight-history-indicator" id="weightIndicator-A-5"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="exercise-item" data-exercise="6" data-no-weight="true" role="button" tabindex="0" aria-pressed="false">
+                    <div class="exercise-check" onclick="toggleExercise(this, event)" aria-hidden="true">✓</div>
+                    <div style="flex: 1;">
+                        <div class="exercise-name" contenteditable="true" data-workout="A" data-exercise="6" onblur="saveExerciseName(this)" aria-label="Editable exercise name">6. Plank</div>
+                        <div class="exercise-details">Squeeze glutes, don't sag</div>
+                    </div>
+                    <div class="exercise-meta">
+                        <div class="reps">3 sets × 30-45 sec</div>
+                        <div class="rest">Rest: 60s</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="info-box">
+            <strong>Post-Workout Cardio:</strong> 15 minutes incline walking (Incline: 10-12, Speed: 4.5-5.0 km/h)
+        </div>
+    </section>
+
+    <!-- Page 5: Workout B + Progression -->
+    <section class="page">
+        <div class="page-header">
+            <h2 class="page-title">Workout B & Progression</h2>
+            <div class="page-subtitle">Complete Your Training Arsenal</div>
+        </div>
+        
+        <!-- Workout Progress -->
+        <div class="workout-progress">
+            <div class="progress-header">
+                <span>Workout B Progress</span>
+                <span id="workoutBProgressText">0/6 exercises</span>
+            </div>
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="workoutBProgressBar" style="width: 0%"></div>
+            </div>
+            <div style="text-align: center; margin-top: 12px;">
+                <button class="timer-btn secondary" onclick="resetWorkoutBProgress()" style="font-size: 12px; padding: 6px 12px;">Reset Progress</button>
+            </div>
+        </div>
+        
+        <div class="workout-day">
+            <div class="workout-day-header">
+                <span>WORKOUT B <span class="badge">Wednesday</span></span>
+                <span>60 Minutes</span>
+            </div>
+            <ul class="exercise-list" id="workoutB">
+                <li class="exercise-item" role="button" tabindex="0" aria-pressed="false">
+                    <div class="exercise-check" onclick="toggleExercise(this, event)" aria-hidden="true">✓</div>
+                    <div style="flex: 1;">
+                        <div class="exercise-name" contenteditable="true" data-workout="B" data-exercise="1" onblur="saveExerciseName(this)">1. Barbell Squats</div>
+                        <div class="exercise-details">Bar on back, sit back and down</div>
+                    </div>
+                    <div class="exercise-meta">
+                        <div class="reps">3 sets × 10-12 reps</div>
+                        <div class="rest">Rest: 90s</div>
+                        <div class="weight-input-container">
+                            <input type="number" class="weight-input" data-workout="B" data-exercise="1" placeholder="kg" onchange="saveExerciseWeight(this)" onclick="event.stopPropagation()">
+                            <span class="weight-unit">kg</span>
+                            <div class="weight-history-indicator" id="weightIndicator-B-1"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="exercise-item" role="button" tabindex="0" aria-pressed="false">
+                    <div class="exercise-check" onclick="toggleExercise(this, event)" aria-hidden="true">✓</div>
+                    <div style="flex: 1;">
+                        <div class="exercise-name" contenteditable="true" data-workout="B" data-exercise="2" onblur="saveExerciseName(this)">2. Seated Cable Row</div>
+                        <div class="exercise-details">Back straight, pull to belly button</div>
+                    </div>
+                    <div class="exercise-meta">
+                        <div class="reps">3 sets × 10-12 reps</div>
+                        <div class="rest">Rest: 90s</div>
+                        <div class="weight-input-container">
+                            <input type="number" class="weight-input" data-workout="B" data-exercise="2" placeholder="kg" onchange="saveExerciseWeight(this)" onclick="event.stopPropagation()">
+                            <span class="weight-unit">kg</span>
+                            <div class="weight-history-indicator" id="weightIndicator-B-2"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="exercise-item" role="button" tabindex="0" aria-pressed="false">
+                    <div class="exercise-check" onclick="toggleExercise(this, event)" aria-hidden="true">✓</div>
+                    <div style="flex: 1;">
+                        <div class="exercise-name" contenteditable="true" data-workout="B" data-exercise="3" onblur="saveExerciseName(this)">3. Bench Press</div>
+                        <div class="exercise-details">Retract shoulder blades, lower to chest</div>
+                    </div>
+                    <div class="exercise-meta">
+                        <div class="reps">3 sets × 10-12 reps</div>
+                        <div class="rest">Rest: 90s</div>
+                        <div class="weight-input-container">
+                            <input type="number" class="weight-input" data-workout="B" data-exercise="3" placeholder="kg" onchange="saveExerciseWeight(this)" onclick="event.stopPropagation()">
+                            <span class="weight-unit">kg</span>
+                            <div class="weight-history-indicator" id="weightIndicator-B-3"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="exercise-item" role="button" tabindex="0" aria-pressed="false">
+                    <div class="exercise-check" onclick="toggleExercise(this, event)" aria-hidden="true">✓</div>
+                    <div style="flex: 1;">
+                        <div class="exercise-name" contenteditable="true" data-workout="B" data-exercise="4" onblur="saveExerciseName(this)">4. Lying Leg Curls</div>
+                        <div class="exercise-details">Hips pressed down, squeeze hamstrings</div>
+                    </div>
+                    <div class="exercise-meta">
+                        <div class="reps">3 sets × 12-15 reps</div>
+                        <div class="rest">Rest: 60s</div>
+                        <div class="weight-input-container">
+                            <input type="number" class="weight-input" data-workout="B" data-exercise="4" placeholder="kg" onchange="saveExerciseWeight(this)" onclick="event.stopPropagation()">
+                            <span class="weight-unit">kg</span>
+                            <div class="weight-history-indicator" id="weightIndicator-B-4"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="exercise-item" role="button" tabindex="0" aria-pressed="false">
+                    <div class="exercise-check" onclick="toggleExercise(this, event)" aria-hidden="true">✓</div>
+                    <div style="flex: 1;">
+                        <div class="exercise-name" contenteditable="true" data-workout="B" data-exercise="5" onblur="saveExerciseName(this)">5. Tricep Rope Pushdowns</div>
+                        <div class="exercise-details">Elbows locked at sides, spread rope</div>
+                    </div>
+                    <div class="exercise-meta">
+                        <div class="reps">2 sets × 12-15 reps</div>
+                        <div class="rest">Rest: 60s</div>
+                        <div class="weight-input-container">
+                            <input type="number" class="weight-input" data-workout="B" data-exercise="5" placeholder="kg" onchange="saveExerciseWeight(this)" onclick="event.stopPropagation()">
+                            <span class="weight-unit">kg</span>
+                            <div class="weight-history-indicator" id="weightIndicator-B-5"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="exercise-item" role="button" tabindex="0" aria-pressed="false">
+                    <div class="exercise-check" onclick="toggleExercise(this, event)" aria-hidden="true">✓</div>
+                    <div style="flex: 1;">
+                        <div class="exercise-name" contenteditable="true" data-workout="B" data-exercise="6" onblur="saveExerciseName(this)" aria-label="Editable exercise name">6. Cable Bicep Curls</div>
+                        <div class="exercise-details">Elbows pinned to sides, squeeze at top</div>
+                    </div>
+                    <div class="exercise-meta">
+                        <div class="reps">3 sets × 10-12 reps</div>
+                        <div class="rest">Rest: 60s</div>
+                        <div class="weight-input-container">
+                            <input type="number" class="weight-input" data-workout="B" data-exercise="6" placeholder="kg" onchange="saveExerciseWeight(this)" onclick="event.stopPropagation()">
+                            <span class="weight-unit">kg</span>
+                            <div class="weight-history-indicator" id="weightIndicator-B-6"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">4-Week Progression Plan</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Week</th>
+                            <th>Focus</th>
+                            <th>Goal</th>
+                            <th>Intensity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Week 1</strong></td>
+                            <td>The Audit</td>
+                            <td>Master form, find baseline weights</td>
+                            <td>60-70% effort</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Week 2</strong></td>
+                            <td>The Baseline</td>
+                            <td>Lock in working weights for each exercise</td>
+                            <td>70-80% effort</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Week 3</strong></td>
+                            <td>The Push</td>
+                            <td>Add 1-2 reps OR 2.5kg to each exercise</td>
+                            <td>80-85% effort</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Week 4</strong></td>
+                            <td>The Test</td>
+                            <td>Prove you're stronger than Day 1</td>
+                            <td>85-90% effort</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">Cardio Protocol</h3>
+            <div class="info-box">
+                <strong>Tuesday & Thursday:</strong> 30-40 minutes brisk walking (outdoor or treadmill)<br>
+                <strong>Post-Workout (Mon/Wed/Fri):</strong> 15 minutes incline walking<br><br>
+                <strong>Why walking?</strong> At 105 kg, running will destroy your knees. Incline walking burns pure fat, spares muscle, and keeps cortisol low.
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 6: Nutrition Plan -->
+    <section class="page" id="nutrition">
+        <div class="page-header">
+            <h2 class="page-title">Nutrition Plan</h2>
+            <div class="page-subtitle">High-Protein Egyptian Meal Plan (2,200 kcal/day)</div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">Daily Macros</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Calories</div>
+                    <div class="stat-value">2,200</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Protein</div>
+                    <div class="stat-value">185g</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Carbs</div>
+                    <div class="stat-value">185g</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Fats</div>
+                    <div class="stat-value">67g</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Water Tracker -->
+        <div class="section">
+            <h3 class="section-title">Daily Water Tracker</h3>
+            <div class="water-tracker">
+                <div class="principle-title" style="text-align: center;">💧 Hydration Goal: 4 Liters (4 bottles)</div>
+                <div class="water-count" id="waterCount">0 / 4 bottles</div>
+                <div class="water-glasses" id="waterGlasses"></div>
+                <div style="text-align: center; margin-top: 12px;">
+                    <button class="timer-btn secondary" onclick="resetWater()" style="font-size: 12px; padding: 6px 12px;">Reset Daily</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">Daily Meal Plan</h3>
+            
+            <!-- Meal Progress -->
+            <div class="workout-progress">
+                <div class="progress-header">
+                    <span>Daily Meal Progress</span>
+                    <span id="mealProgressText">0/3 meals</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" id="mealProgressBar" style="width: 0%"></div>
+                </div>
+                <div style="text-align: center; margin-top: 12px;">
+                    <button class="timer-btn secondary" onclick="resetMealProgress()" style="font-size: 12px; padding: 6px 12px;">Reset Daily</button>
+                </div>
+            </div>
+            
+            <div class="info-box meal-schedule-note">
+                <strong>3 meals per day</strong> — eat whenever fits your schedule. No fixed meal times; hit all three meals to reach your daily targets.
+            </div>
+
+            <div class="meal-daily-total">
+                <strong>Daily total:</strong> ~2,200 kcal | ~185g protein
+            </div>
+            
+            <div class="meal-plan">
+                <div class="meal-card" data-meal="1">
+                    <div class="meal-header">
+                        <div>
+                            <div class="meal-name">Meal 1</div>
+                            <div class="meal-macros">~750 kcal | ~50g Protein</div>
+                        </div>
+                        <input type="checkbox" class="meal-checkbox" onchange="toggleMeal(this)" style="width: 24px; height: 24px; cursor: pointer;" aria-label="Mark Meal 1 as completed">
+                    </div>
+                    <div class="meal-items">
+                        <ul>
+                            <li contenteditable="true" data-meal="1" data-item="0" onblur="saveMealItem(this)">3 small Baladi bread slices</li>
+                            <li contenteditable="true" data-meal="1" data-item="1" onblur="saveMealItem(this)">3 boiled eggs (or 2 whole + 2 whites)</li>
+                            <li contenteditable="true" data-meal="1" data-item="2" onblur="saveMealItem(this)">1 cup Ful Medames (no oil)</li>
+                            <li contenteditable="true" data-meal="1" data-item="3" onblur="saveMealItem(this)">1 cup Laban (yogurt)</li>
+                            <li contenteditable="true" data-meal="1" data-item="4" onblur="saveMealItem(this)">Black coffee or tea (no sugar)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="meal-card" data-meal="2">
+                    <div class="meal-header">
+                        <div>
+                            <div class="meal-name">Meal 2</div>
+                            <div class="meal-macros">~730 kcal | ~72g Protein</div>
+                        </div>
+                        <input type="checkbox" class="meal-checkbox" onchange="toggleMeal(this)" style="width: 24px; height: 24px; cursor: pointer;" aria-label="Mark Meal 2 as completed">
+                    </div>
+                    <div class="meal-items">
+                        <ul>
+                            <li contenteditable="true" data-meal="2" data-item="0" onblur="saveMealItem(this)">220g chicken breast (grilled/boiled)</li>
+                            <li contenteditable="true" data-meal="2" data-item="1" onblur="saveMealItem(this)">1 cup white rice (cooked)</li>
+                            <li contenteditable="true" data-meal="2" data-item="2" onblur="saveMealItem(this)">Large salad (cucumber, tomato, lettuce)</li>
+                            <li contenteditable="true" data-meal="2" data-item="3" onblur="saveMealItem(this)">1 tbsp olive oil on salad</li>
+                            <li contenteditable="true" data-meal="2" data-item="4" onblur="saveMealItem(this)">1 seasonal fruit (orange or banana)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="meal-card" data-meal="3">
+                    <div class="meal-header">
+                        <div>
+                            <div class="meal-name">Meal 3</div>
+                            <div class="meal-macros">~720 kcal | ~63g Protein</div>
+                        </div>
+                        <input type="checkbox" class="meal-checkbox" onchange="toggleMeal(this)" style="width: 24px; height: 24px; cursor: pointer;" aria-label="Mark Meal 3 as completed">
+                    </div>
+                    <div class="meal-items">
+                        <ul>
+                            <li contenteditable="true" data-meal="3" data-item="0" onblur="saveMealItem(this)">250g Gibna Beida (cottage cheese)</li>
+                            <li contenteditable="true" data-meal="3" data-item="1" onblur="saveMealItem(this)">2 Baladi bread slices</li>
+                            <li contenteditable="true" data-meal="3" data-item="2" onblur="saveMealItem(this)">1 cup cooked lentils</li>
+                            <li contenteditable="true" data-meal="3" data-item="3" onblur="saveMealItem(this)">1 tbsp tahini</li>
+                            <li contenteditable="true" data-meal="3" data-item="4" onblur="saveMealItem(this)">Cucumber/tomato slices</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="highlight-box">
+            <div class="highlight-title">100% Local & Accessible</div>
+            This plan relies entirely on high-quality, accessible Egyptian staples. Shop at local souqs, buy dry ful/lentils in bulk, and purchase seasonal vegetables for maximum freshness and nutritional value.
+        </div>
+    </section>
+
+    <!-- Page 7: Shopping & Rules -->
+    <section class="page">
+        <div class="page-header">
+            <h2 class="page-title">Shopping List & Rules</h2>
+            <div class="page-subtitle">Your Weekly Grocery Guide & Non-Negotiables</div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">Weekly Shopping List</h3>
+            <div class="two-column">
+                <div>
+                    <h4 class="list-title">Proteins</h4>
+                    <ul class="shopping-list">
+                        <li onclick="toggleShoppingItem(this)"><input type="checkbox" onchange="event.stopPropagation()"> <span contenteditable="true" class="shopping-item-text" data-index="0" onblur="saveShoppingItemText(this)" onclick="event.stopPropagation()" aria-label="Editable shopping item">21 eggs (3 per day)</span></li>
+                        <li onclick="toggleShoppingItem(this)"><input type="checkbox" onchange="event.stopPropagation()"> <span contenteditable="true" class="shopping-item-text" data-index="1" onblur="saveShoppingItemText(this)" onclick="event.stopPropagation()" aria-label="Editable shopping item">Chicken breast (1.5kg)</span></li>
+                        <li onclick="toggleShoppingItem(this)"><input type="checkbox" onchange="event.stopPropagation()"> <span contenteditable="true" class="shopping-item-text" data-index="2" onblur="saveShoppingItemText(this)" onclick="event.stopPropagation()" aria-label="Editable shopping item">Ful Medames (dry, 1kg)</span></li>
+                        <li onclick="toggleShoppingItem(this)"><input type="checkbox" onchange="event.stopPropagation()"> <span contenteditable="true" class="shopping-item-text" data-index="3" onblur="saveShoppingItemText(this)" onclick="event.stopPropagation()" aria-label="Editable shopping item">Lentils (500g)</span></li>
+                        <li onclick="toggleShoppingItem(this)"><input type="checkbox" onchange="event.stopPropagation()"> <span contenteditable="true" class="shopping-item-text" data-index="4" onblur="saveShoppingItemText(this)" onclick="event.stopPropagation()" aria-label="Editable shopping item">Gibna Beida (2kg)</span></li>
+                        <li onclick="toggleShoppingItem(this)"><input type="checkbox" onchange="event.stopPropagation()"> <span contenteditable="true" class="shopping-item-text" data-index="5" onblur="saveShoppingItemText(this)" onclick="event.stopPropagation()" aria-label="Editable shopping item">Laban/Yogurt (2kg)</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="list-title">Carbs & Fats</h4>
+                    <ul class="shopping-list">
+                        <li onclick="toggleShoppingItem(this)"><input type="checkbox" onchange="event.stopPropagation()"> <span contenteditable="true" class="shopping-item-text" data-index="6" onblur="saveShoppingItemText(this)" onclick="event.stopPropagation()" aria-label="Editable shopping item">Baladi bread (daily)</span></li>
+                        <li onclick="toggleShoppingItem(this)"><input type="checkbox" onchange="event.stopPropagation()"> <span contenteditable="true" class="shopping-item-text" data-index="7" onblur="saveShoppingItemText(this)" onclick="event.stopPropagation()" aria-label="Editable shopping item">White rice (1kg)</span></li>
+                        <li onclick="toggleShoppingItem(this)"><input type="checkbox" onchange="event.stopPropagation()"> <span contenteditable="true" class="shopping-item-text" data-index="8" onblur="saveShoppingItemText(this)" onclick="event.stopPropagation()" aria-label="Editable shopping item">Olive oil (250ml)</span></li>
+                        <li onclick="toggleShoppingItem(this)"><input type="checkbox" onchange="event.stopPropagation()"> <span contenteditable="true" class="shopping-item-text" data-index="9" onblur="saveShoppingItemText(this)" onclick="event.stopPropagation()" aria-label="Editable shopping item">Tahini (250g)</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="shopping-vegetables">
+                <h4 class="list-title">Vegetables & Fruits</h4>
+                <ul class="shopping-list">
+                    <li onclick="toggleShoppingItem(this)"><input type="checkbox" onchange="event.stopPropagation()"> <span contenteditable="true" class="shopping-item-text" data-index="10" onblur="saveShoppingItemText(this)" onclick="event.stopPropagation()" aria-label="Editable shopping item">Cucumbers (2kg), Tomatoes (2kg), Lettuce/Cabbage (1kg)</span></li>
+                    <li onclick="toggleShoppingItem(this)"><input type="checkbox" onchange="event.stopPropagation()"> <span contenteditable="true" class="shopping-item-text" data-index="11" onblur="saveShoppingItemText(this)" onclick="event.stopPropagation()" aria-label="Editable shopping item">Carrots (1kg), Onions/Garlic (500g)</span></li>
+                    <li onclick="toggleShoppingItem(this)"><input type="checkbox" onchange="event.stopPropagation()"> <span contenteditable="true" class="shopping-item-text" data-index="12" onblur="saveShoppingItemText(this)" onclick="event.stopPropagation()" aria-label="Editable shopping item">Seasonal fruit - Oranges/Bananas (2kg)</span></li>
+                </ul>
+            </div>
+            <div class="btn-row-center">
+                <button class="timer-btn secondary" onclick="resetShoppingList()" style="font-size: 12px; padding: 6px 12px; margin-right: 8px;">Reset for New Week</button>
+                <button class="timer-btn secondary" onclick="copyShoppingList()" style="font-size: 12px; padding: 6px 12px;">Copy to Clipboard</button>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">The 5 Non-Negotiable Rules</h3>
+            <div class="principle-box">
+                <ol style="list-style: decimal; padding-left: 20px; margin: 0;">
+                    <li class="rule-item"><strong>Never Skip Protein:</strong> Even if you skip carbs, never skip eggs, ful, or gibna. Your 42.8 kg of muscle depends on hitting 185g protein daily.</li>
+                    <li style="padding: 8px 0; padding-left: 8px;"><strong>Hydration is Free:</strong> Drink 4 liters of water daily. This is critical for fat loss and metabolism.</li>
+                    <li style="padding: 8px 0; padding-left: 8px;"><strong>Track Everything:</strong> Use MyFitnessPal or a notebook. If you don't track, you won't know if you're in a deficit.</li>
+                    <li style="padding: 8px 0; padding-left: 8px;"><strong>Sunday Meal Prep:</strong> Boil 21 eggs, cook 1kg ful and 500g lentils, chop vegetables. This saves time and prevents bad decisions.</li>
+                    <li style="padding: 8px 0; padding-left: 8px;"><strong>The 80/20 Rule:</strong> Eat this plan 80% of the time. If you have a family gathering, enjoy it, then return to the plan immediately.</li>
+                </ol>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">Smart Shopping Hacks</h3>
+            <div class="info-box">
+                <strong>✓ Shop Smart:</strong> Local souqs offer the freshest produce. Buy vegetables late in the afternoon for the best selection.<br><br>
+                <strong>✓ Protein Maximizers:</strong> Use 1 egg yolk + 2 egg whites per serving to maximize protein while managing fats. Ful + eggs = complete amino acids.<br><br>
+                <strong>✓ Seasonal Swaps:</strong> Winter: Oranges, guava. Summer: Watermelon, mango. Year-round: Cabbage, carrots, onions.
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 8: Tracking & Accountability -->
+    <section class="page" id="tracking">
+        <div class="page-header">
+            <h2 class="page-title">Tracking & Accountability</h2>
+            <div class="page-subtitle">Your Weekly Check-In System</div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">Weekly Check-In (Every Sunday)</h3>
+            <div class="info-box" style="margin-bottom: 20px;">
+                Answer these questions and send them to your Prime Vanguard accountability partner. Your answers are saved automatically.
+            </div>
+            <div class="table-wrapper">
+                <table class="progress-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 60%;">Question</th>
+                            <th>Your Answer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1. Did I hit 185g protein every day?</td>
+                            <td><input type="text" placeholder="Yes/No" data-field="protein"></td>
+                        </tr>
+                        <tr>
+                            <td>2. Did I stick to the approved food list?</td>
+                            <td><input type="text" placeholder="Yes/No" data-field="foodlist"></td>
+                        </tr>
+                        <tr>
+                            <td>3. Which meals were hardest to stick to?</td>
+                            <td><input type="text" placeholder="Your answer" data-field="hardest"></td>
+                        </tr>
+                        <tr>
+                            <td>4. Did I complete all 3 workouts?</td>
+                            <td><input type="text" placeholder="Yes/No" data-field="workouts"></td>
+                        </tr>
+                        <tr>
+                            <td>5. Did I drink 4L water daily?</td>
+                            <td><input type="text" placeholder="Yes/No" data-field="water"></td>
+                        </tr>
+                        <tr>
+                            <td>6. Current weight (kg):</td>
+                            <td><input type="text" placeholder="Enter weight" data-field="weight"></td>
+                        </tr>
+                        <tr>
+                            <td>7. One win this week:</td>
+                            <td><input type="text" placeholder="Your win" data-field="win"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn-row-center">
+                <button class="timer-btn primary" type="button" onclick="saveCheckIn()">Save Check-In</button>
+                <button class="timer-btn secondary" type="button" onclick="clearCheckIn()">Clear</button>
+                <button class="timer-btn secondary" type="button" onclick="clearOldData()">Clear Old Data</button>
+            </div>
+            <h4 class="list-title checkin-history-title">Previous Check-Ins</h4>
+            <div id="checkInHistory" class="checkin-history" aria-live="polite"></div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">Weekly Weight Progress</h3>
+            <div class="info-box info-box-spaced">
+                Track your weight every week. <strong>4-week target: 100–101 kg</strong> · <strong>Long-term target: 88.4 kg</strong>
+            </div>
+            
+            <!-- Weight Input -->
+            <div class="weight-log-row">
+                <div class="weight-input-wrap">
+                    <input type="number" id="weightInput" class="form-input" placeholder="Enter weight (kg)" step="0.1" min="0" max="200">
+                    <div id="weightInputValidation" class="validation-message"></div>
+                </div>
+                <input type="date" id="weightDate" class="form-input form-input-date">
+                <button class="timer-btn primary" type="button" onclick="logWeight()">Log Weight</button>
+            </div>
+            
+            <!-- Weight Stats -->
+            <div class="stats-grid stats-grid-3">
+                <div class="stat-card">
+                    <div class="stat-label">Starting</div>
+                    <div class="stat-value" id="startingWeight">105.0 kg</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Current</div>
+                    <div class="stat-value" id="currentWeight">105.0 kg</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">4-Week Target</div>
+                    <div class="stat-value" id="fourWeekTarget">100-101 kg</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Long-Term Target</div>
+                    <div class="stat-value" id="longTermTarget">88.4 kg</div>
+                </div>
+            </div>
+            
+            <!-- Weight Chart -->
+            <div class="chart-container">
+                <canvas id="weightChart" class="weight-chart-canvas"></canvas>
+                <div id="weightChartEmptyState" class="empty-state" style="display: none;">
+                    <div class="empty-state-icon">📊</div>
+                    <div class="empty-state-title">No Weight Data Yet</div>
+                    <div class="empty-state-description">Log your first weight to start tracking your progress</div>
+                </div>
+            </div>
+            
+            <!-- Weight History -->
+            <div class="btn-row-center">
+                <button class="timer-btn secondary btn-sm" type="button" onclick="clearWeightHistory()">Clear History</button>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">Progress Tracking</h3>
+            <div class="two-column">
+                <div>
+                    <h4 class="list-title">Weekly Measurements</h4>
+                    <ul class="shopping-list">
+                        <li>Body weight (same time, same day)</li>
+                        <li>Waist circumference</li>
+                        <li>Progress photos (front/side/back)</li>
+                        <li>Workout weights used</li>
+                        <li>Energy levels (1-10)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="list-title">Success Metrics</h4>
+                    <ul class="shopping-list">
+                        <li>Workout completion rate</li>
+                        <li>Protein target adherence</li>
+                        <li>Water intake consistency</li>
+                        <li>Sleep quality (hours)</li>
+                        <li>Mood/mental clarity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">The Prime Vanguard Commitment</h3>
+            <div class="commitment-box">
+                <div class="principle-title">Your Pledge</div>
+                <p>
+                    "I, <span class='commitment-text-name'>Abdulrahman</span>, commit to this 4-week transformation with absolute dedication. I understand that excellence is not an act, but a habit. I will show up even when I don't feel like it. I will track my food even when it's inconvenient. I will lift with intensity even when I'm tired."
+                </p>
+                <p>
+                    "I am not doing this for likes or validation. I am doing this to build the physical armor required to lead my family, serve my community, and leave a legacy. I am a man of my word."
+                </p>
+                <div class="signature-area">
+                    <div class="signature-label">Signature:</div>
+                    <input type="text" class="signature-input" id="signatureInput" placeholder="Type your name" onblur="saveSignature()">
+                    <div class="signature-label">Date:</div>
+                    <input type="date" class="signature-input" id="dateInput" onblur="saveSignature()">
+                </div>
+            </div>
+        </div>
+        
+        <div class="highlight-box" style="text-align: center; margin-top: 24px;">
+            <div class="highlight-title" style="font-size: 16px;">"You don't rise to the level of your goals.<br>You fall to the level of your systems."</div>
+            <div style="margin-top: 8px; font-size: 13px; color: #64748B;">— Prime Vanguard Brotherhood</div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logo">PRIME VANGUARD</div>
+        <div>Physical Mastery Brotherhood | Confidential Member Document</div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" type="button" data-action="scroll-top" aria-label="Back to top">↑</button>
+    
+    <!-- Floating Action Panel -->
+    <div class="fab-panel">
+        <button class="fab-btn" type="button" data-action="open-timer" title="Rest Timer" aria-label="Rest Timer">
+            ⏱
+            <span class="tooltip">Rest Timer</span>
+        </button>
+        <button class="fab-btn" type="button" data-action="sync" title="Sync Progress" aria-label="Sync Progress">
+            💾
+            <span class="tooltip">Sync Progress</span>
+        </button>
+        <button class="fab-btn" type="button" data-action="print" title="Print Plan" aria-label="Print Plan">
+            🖨
+            <span class="tooltip">Print Plan</span>
+        </button>
+        <button class="fab-btn" type="button" data-action="share" title="Share" aria-label="Share">
+            📤
+            <span class="tooltip">Share</span>
+        </button>
+    </div>
+    
+    <!-- Rest Timer Modal -->
+    <div class="modal-overlay" id="restTimerModal" role="dialog" aria-modal="true" aria-labelledby="restTimerTitle" aria-hidden="true">
+        <div class="modal">
+            <div class="principle-title" id="restTimerTitle">Rest Timer</div>
+            <div class="modal-subtitle">Recover and prepare for your next set</div>
+            <div class="timer-display" id="timerDisplay" aria-live="polite">90</div>
+            <div class="timer-progress">
+                <div class="timer-progress-fill" id="timerProgressFill" style="width: 100%"></div>
+            </div>
+            <div class="timer-controls">
+                <button class="timer-btn secondary" type="button" onclick="adjustTimer(-10)">-10s</button>
+                <button class="timer-btn primary" type="button" id="timerToggleBtn" onclick="toggleTimer()">Pause</button>
+                <button class="timer-btn secondary" type="button" onclick="adjustTimer(10)">+10s</button>
+            </div>
+            <div class="timer-sound-row">
+                <button class="timer-btn secondary" type="button" onclick="toggleTimerSound()" id="soundToggleBtn">Sound On</button>
+            </div>
+            <div class="timer-close-row">
+                <button class="timer-btn secondary" type="button" data-action="close-timer">Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Toast Notification -->
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+    
+    <!-- Auto-save Indicator -->
+    <div class="auto-save-indicator" id="autoSaveIndicator">💾 Auto-saving...</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
