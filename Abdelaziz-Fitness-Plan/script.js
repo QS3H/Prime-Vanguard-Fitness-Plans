@@ -1690,10 +1690,20 @@ function setupEventDelegation() {
   document
     .querySelectorAll('.mobile-menu a[data-action="toggle-mobile-menu"]')
     .forEach((link) => {
-      link.addEventListener("click", () => {
+      link.addEventListener("click", (event) => {
         const menu = document.getElementById("mobileMenu");
+        const href = link.getAttribute("href") || "";
+        const target = href.startsWith("#") ? href.slice(1) : "";
+
+        event.preventDefault();
+        event.stopPropagation();
+
         if (menu.classList.contains("active")) {
           toggleMobileMenu();
+        }
+
+        if (target) {
+          scrollToSection(target);
         }
       });
     });
