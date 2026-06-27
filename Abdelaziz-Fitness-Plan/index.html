@@ -1087,6 +1087,47 @@
           (Incline: 10-12%, Speed: 4.5-5.0 km/h).
         </div>
 
+        <!-- Workout Progress -->
+        <div class="workout-progress">
+          <div class="progress-header">
+            <span>Day 4 Progress</span>
+            <span id="workoutCProgressText">0/6 exercises</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div
+              class="progress-bar-fill"
+              id="workoutCProgressBar"
+              style="width: 0%"
+            ></div>
+          </div>
+          <div
+            style="
+              text-align: center;
+              margin-top: 12px;
+              display: flex;
+              gap: 0.5rem;
+              justify-content: center;
+              flex-wrap: wrap;
+            "
+          >
+            <button
+              class="timer-btn primary"
+              type="button"
+              data-action="open-timer"
+              style="font-size: 12px; padding: 6px 12px"
+            >
+              ⏱ Rest Timer
+            </button>
+            <button
+              class="timer-btn secondary"
+              onclick="resetWorkoutCProgress()"
+              style="font-size: 12px; padding: 6px 12px"
+            >
+              Reset Progress
+            </button>
+          </div>
+        </div>
+
         <div class="workout-day">
           <div class="workout-day-header">
             <span
@@ -1095,10 +1136,31 @@
             >
             <span>Rest: 60-90 sec</span>
           </div>
-          <ul class="exercise-list">
-            <li class="exercise-item">
+          <ul class="exercise-list" id="workoutC">
+            <li
+              class="exercise-item"
+              data-exercise="1"
+              role="button"
+              tabindex="0"
+              aria-pressed="false"
+            >
+              <div
+                class="exercise-check"
+                onclick="toggleExercise(this, event)"
+                aria-hidden="true"
+              >
+                ✓
+              </div>
               <div style="flex: 1">
-                <div class="exercise-name">1. Incline Dumbbell Press</div>
+                <div
+                  class="exercise-name"
+                  contenteditable="true"
+                  data-workout="C"
+                  data-exercise="1"
+                  onblur="saveExerciseName(this)"
+                >
+                  1. Incline Dumbbell Press
+                </div>
                 <div class="exercise-details">
                   Focus on mind-muscle connection
                 </div>
@@ -1106,11 +1168,48 @@
               <div class="exercise-meta">
                 <div class="reps">4 sets × 10-12 reps</div>
                 <div class="rest">Rest: 60-90s</div>
+                <div class="weight-input-container">
+                  <input
+                    type="number"
+                    class="weight-input"
+                    data-workout="C"
+                    data-exercise="1"
+                    placeholder="kg"
+                    onchange="saveExerciseWeight(this)"
+                    onclick="event.stopPropagation()"
+                  />
+                  <span class="weight-unit">kg</span>
+                  <div
+                    class="weight-history-indicator"
+                    id="weightIndicator-C-1"
+                  ></div>
+                </div>
               </div>
             </li>
-            <li class="exercise-item">
+            <li
+              class="exercise-item"
+              data-exercise="2"
+              role="button"
+              tabindex="0"
+              aria-pressed="false"
+            >
+              <div
+                class="exercise-check"
+                onclick="toggleExercise(this, event)"
+                aria-hidden="true"
+              >
+                ✓
+              </div>
               <div style="flex: 1">
-                <div class="exercise-name">2. Seated Cable Row</div>
+                <div
+                  class="exercise-name"
+                  contenteditable="true"
+                  data-workout="C"
+                  data-exercise="2"
+                  onblur="saveExerciseName(this)"
+                >
+                  2. Seated Cable Row
+                </div>
                 <div class="exercise-details">
                   Back straight, pull to belly button
                 </div>
@@ -1118,11 +1217,48 @@
               <div class="exercise-meta">
                 <div class="reps">4 sets × 10-12 reps</div>
                 <div class="rest">Rest: 60-90s</div>
+                <div class="weight-input-container">
+                  <input
+                    type="number"
+                    class="weight-input"
+                    data-workout="C"
+                    data-exercise="2"
+                    placeholder="kg"
+                    onchange="saveExerciseWeight(this)"
+                    onclick="event.stopPropagation()"
+                  />
+                  <span class="weight-unit">kg</span>
+                  <div
+                    class="weight-history-indicator"
+                    id="weightIndicator-C-2"
+                  ></div>
+                </div>
               </div>
             </li>
-            <li class="exercise-item">
+            <li
+              class="exercise-item"
+              data-exercise="3"
+              role="button"
+              tabindex="0"
+              aria-pressed="false"
+            >
+              <div
+                class="exercise-check"
+                onclick="toggleExercise(this, event)"
+                aria-hidden="true"
+              >
+                ✓
+              </div>
               <div style="flex: 1">
-                <div class="exercise-name">3. Dumbbell Lateral Raises</div>
+                <div
+                  class="exercise-name"
+                  contenteditable="true"
+                  data-workout="C"
+                  data-exercise="3"
+                  onblur="saveExerciseName(this)"
+                >
+                  3. Dumbbell Lateral Raises
+                </div>
                 <div class="exercise-details">
                   Controlled tempo, no momentum
                 </div>
@@ -1130,11 +1266,48 @@
               <div class="exercise-meta">
                 <div class="reps">4 sets × 12-15 reps</div>
                 <div class="rest">Rest: 60-90s</div>
+                <div class="weight-input-container">
+                  <input
+                    type="number"
+                    class="weight-input"
+                    data-workout="C"
+                    data-exercise="3"
+                    placeholder="kg"
+                    onchange="saveExerciseWeight(this)"
+                    onclick="event.stopPropagation()"
+                  />
+                  <span class="weight-unit">kg</span>
+                  <div
+                    class="weight-history-indicator"
+                    id="weightIndicator-C-3"
+                  ></div>
+                </div>
               </div>
             </li>
-            <li class="exercise-item">
+            <li
+              class="exercise-item"
+              data-exercise="4"
+              role="button"
+              tabindex="0"
+              aria-pressed="false"
+            >
+              <div
+                class="exercise-check"
+                onclick="toggleExercise(this, event)"
+                aria-hidden="true"
+              >
+                ✓
+              </div>
               <div style="flex: 1">
-                <div class="exercise-name">4. Cable Face Pulls</div>
+                <div
+                  class="exercise-name"
+                  contenteditable="true"
+                  data-workout="C"
+                  data-exercise="4"
+                  onblur="saveExerciseName(this)"
+                >
+                  4. Cable Face Pulls
+                </div>
                 <div class="exercise-details">
                   Pull to face, external rotation at end
                 </div>
@@ -1142,21 +1315,95 @@
               <div class="exercise-meta">
                 <div class="reps">3 sets × 15 reps</div>
                 <div class="rest">Rest: 60-90s</div>
+                <div class="weight-input-container">
+                  <input
+                    type="number"
+                    class="weight-input"
+                    data-workout="C"
+                    data-exercise="4"
+                    placeholder="kg"
+                    onchange="saveExerciseWeight(this)"
+                    onclick="event.stopPropagation()"
+                  />
+                  <span class="weight-unit">kg</span>
+                  <div
+                    class="weight-history-indicator"
+                    id="weightIndicator-C-4"
+                  ></div>
+                </div>
               </div>
             </li>
-            <li class="exercise-item">
+            <li
+              class="exercise-item"
+              data-exercise="5"
+              role="button"
+              tabindex="0"
+              aria-pressed="false"
+            >
+              <div
+                class="exercise-check"
+                onclick="toggleExercise(this, event)"
+                aria-hidden="true"
+              >
+                ✓
+              </div>
               <div style="flex: 1">
-                <div class="exercise-name">5. Hammer Curls</div>
+                <div
+                  class="exercise-name"
+                  contenteditable="true"
+                  data-workout="C"
+                  data-exercise="5"
+                  onblur="saveExerciseName(this)"
+                >
+                  5. Hammer Curls
+                </div>
                 <div class="exercise-details">Neutral grip, squeeze at top</div>
               </div>
               <div class="exercise-meta">
                 <div class="reps">3 sets × 12 reps</div>
                 <div class="rest">Rest: 60-90s</div>
+                <div class="weight-input-container">
+                  <input
+                    type="number"
+                    class="weight-input"
+                    data-workout="C"
+                    data-exercise="5"
+                    placeholder="kg"
+                    onchange="saveExerciseWeight(this)"
+                    onclick="event.stopPropagation()"
+                  />
+                  <span class="weight-unit">kg</span>
+                  <div
+                    class="weight-history-indicator"
+                    id="weightIndicator-C-5"
+                  ></div>
+                </div>
               </div>
             </li>
-            <li class="exercise-item">
+            <li
+              class="exercise-item"
+              data-exercise="6"
+              role="button"
+              tabindex="0"
+              aria-pressed="false"
+            >
+              <div
+                class="exercise-check"
+                onclick="toggleExercise(this, event)"
+                aria-hidden="true"
+              >
+                ✓
+              </div>
               <div style="flex: 1">
-                <div class="exercise-name">6. Overhead Tricep Extension</div>
+                <div
+                  class="exercise-name"
+                  contenteditable="true"
+                  data-workout="C"
+                  data-exercise="6"
+                  onblur="saveExerciseName(this)"
+                >
+                  6. Overhead Tricep Extension
+                </div>
                 <div class="exercise-details">
                   Elbows tucked, full stretch at bottom
                 </div>
@@ -1164,6 +1411,22 @@
               <div class="exercise-meta">
                 <div class="reps">3 sets × 12 reps</div>
                 <div class="rest">Rest: 60-90s</div>
+                <div class="weight-input-container">
+                  <input
+                    type="number"
+                    class="weight-input"
+                    data-workout="C"
+                    data-exercise="6"
+                    placeholder="kg"
+                    onchange="saveExerciseWeight(this)"
+                    onclick="event.stopPropagation()"
+                  />
+                  <span class="weight-unit">kg</span>
+                  <div
+                    class="weight-history-indicator"
+                    id="weightIndicator-C-6"
+                  ></div>
+                </div>
               </div>
             </li>
           </ul>
@@ -1174,6 +1437,47 @@
           (Incline: 10-12%, Speed: 4.5-5.0 km/h).
         </div>
 
+        <!-- Workout Progress -->
+        <div class="workout-progress">
+          <div class="progress-header">
+            <span>Day 5 Progress</span>
+            <span id="workoutDProgressText">0/6 exercises</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div
+              class="progress-bar-fill"
+              id="workoutDProgressBar"
+              style="width: 0%"
+            ></div>
+          </div>
+          <div
+            style="
+              text-align: center;
+              margin-top: 12px;
+              display: flex;
+              gap: 0.5rem;
+              justify-content: center;
+              flex-wrap: wrap;
+            "
+          >
+            <button
+              class="timer-btn primary"
+              type="button"
+              data-action="open-timer"
+              style="font-size: 12px; padding: 6px 12px"
+            >
+              ⏱ Rest Timer
+            </button>
+            <button
+              class="timer-btn secondary"
+              onclick="resetWorkoutDProgress()"
+              style="font-size: 12px; padding: 6px 12px"
+            >
+              Reset Progress
+            </button>
+          </div>
+        </div>
+
         <div class="workout-day">
           <div class="workout-day-header">
             <span
@@ -1182,40 +1486,200 @@
             >
             <span>Rest: 60-90 sec</span>
           </div>
-          <ul class="exercise-list">
-            <li class="exercise-item">
+          <ul class="exercise-list" id="workoutD">
+            <li
+              class="exercise-item"
+              data-exercise="1"
+              role="button"
+              tabindex="0"
+              aria-pressed="false"
+              onclick="handleExerciseItemClick(this, event)"
+              onkeydown="
+                if (event.key === 'Enter' || event.key === ' ') {
+                  event.preventDefault();
+                  toggleExercise(this.querySelector('.exercise-check'), event);
+                }
+              "
+            >
+              <div
+                class="exercise-check"
+                onclick="toggleExercise(this, event)"
+                aria-hidden="true"
+              >
+                ✓
+              </div>
               <div style="flex: 1">
-                <div class="exercise-name">1. Bulgarian Split Squats</div>
+                <div
+                  class="exercise-name"
+                  contenteditable="true"
+                  data-workout="D"
+                  data-exercise="1"
+                  onblur="saveExerciseName(this)"
+                >
+                  1. Bulgarian Split Squats
+                </div>
                 <div class="exercise-details">Per leg, control the descent</div>
               </div>
               <div class="exercise-meta">
                 <div class="reps">3 sets × 10-12 reps (per leg)</div>
                 <div class="rest">Rest: 60-90s</div>
+                <div class="weight-input-container">
+                  <input
+                    type="number"
+                    class="weight-input"
+                    data-workout="D"
+                    data-exercise="1"
+                    placeholder="kg"
+                    onchange="saveExerciseWeight(this)"
+                    onclick="event.stopPropagation()"
+                  />
+                  <span class="weight-unit">kg</span>
+                  <div
+                    class="weight-history-indicator"
+                    id="weightIndicator-D-1"
+                  ></div>
+                </div>
               </div>
             </li>
-            <li class="exercise-item">
+            <li
+              class="exercise-item"
+              data-exercise="2"
+              role="button"
+              tabindex="0"
+              aria-pressed="false"
+              onclick="handleExerciseItemClick(this, event)"
+              onkeydown="
+                if (event.key === 'Enter' || event.key === ' ') {
+                  event.preventDefault();
+                  toggleExercise(this.querySelector('.exercise-check'), event);
+                }
+              "
+            >
+              <div
+                class="exercise-check"
+                onclick="toggleExercise(this, event)"
+                aria-hidden="true"
+              >
+                ✓
+              </div>
               <div style="flex: 1">
-                <div class="exercise-name">2. Leg Extensions</div>
+                <div
+                  class="exercise-name"
+                  contenteditable="true"
+                  data-workout="D"
+                  data-exercise="2"
+                  onblur="saveExerciseName(this)"
+                >
+                  2. Leg Extensions
+                </div>
                 <div class="exercise-details">Squeeze quads at top</div>
               </div>
               <div class="exercise-meta">
                 <div class="reps">4 sets × 12-15 reps</div>
                 <div class="rest">Rest: 60-90s</div>
+                <div class="weight-input-container">
+                  <input
+                    type="number"
+                    class="weight-input"
+                    data-workout="D"
+                    data-exercise="2"
+                    placeholder="kg"
+                    onchange="saveExerciseWeight(this)"
+                    onclick="event.stopPropagation()"
+                  />
+                  <span class="weight-unit">kg</span>
+                  <div
+                    class="weight-history-indicator"
+                    id="weightIndicator-D-2"
+                  ></div>
+                </div>
               </div>
             </li>
-            <li class="exercise-item">
+            <li
+              class="exercise-item"
+              data-exercise="3"
+              role="button"
+              tabindex="0"
+              aria-pressed="false"
+              onclick="handleExerciseItemClick(this, event)"
+              onkeydown="
+                if (event.key === 'Enter' || event.key === ' ') {
+                  event.preventDefault();
+                  toggleExercise(this.querySelector('.exercise-check'), event);
+                }
+              "
+            >
+              <div
+                class="exercise-check"
+                onclick="toggleExercise(this, event)"
+                aria-hidden="true"
+              >
+                ✓
+              </div>
               <div style="flex: 1">
-                <div class="exercise-name">3. Seated Leg Curls</div>
+                <div
+                  class="exercise-name"
+                  contenteditable="true"
+                  data-workout="D"
+                  data-exercise="3"
+                  onblur="saveExerciseName(this)"
+                >
+                  3. Seated Leg Curls
+                </div>
                 <div class="exercise-details">Full range of motion</div>
               </div>
               <div class="exercise-meta">
                 <div class="reps">4 sets × 12-15 reps</div>
                 <div class="rest">Rest: 60-90s</div>
+                <div class="weight-input-container">
+                  <input
+                    type="number"
+                    class="weight-input"
+                    data-workout="D"
+                    data-exercise="3"
+                    placeholder="kg"
+                    onchange="saveExerciseWeight(this)"
+                    onclick="event.stopPropagation()"
+                  />
+                  <span class="weight-unit">kg</span>
+                  <div
+                    class="weight-history-indicator"
+                    id="weightIndicator-D-3"
+                  ></div>
+                </div>
               </div>
             </li>
-            <li class="exercise-item">
+            <li
+              class="exercise-item"
+              data-exercise="4"
+              role="button"
+              tabindex="0"
+              aria-pressed="false"
+              onclick="handleExerciseItemClick(this, event)"
+              onkeydown="
+                if (event.key === 'Enter' || event.key === ' ') {
+                  event.preventDefault();
+                  toggleExercise(this.querySelector('.exercise-check'), event);
+                }
+              "
+            >
+              <div
+                class="exercise-check"
+                onclick="toggleExercise(this, event)"
+                aria-hidden="true"
+              >
+                ✓
+              </div>
               <div style="flex: 1">
-                <div class="exercise-name">4. Barbell Hip Thrusts</div>
+                <div
+                  class="exercise-name"
+                  contenteditable="true"
+                  data-workout="D"
+                  data-exercise="4"
+                  onblur="saveExerciseName(this)"
+                >
+                  4. Barbell Hip Thrusts
+                </div>
                 <div class="exercise-details">
                   Drive through heels, squeeze glutes
                 </div>
@@ -1223,21 +1687,109 @@
               <div class="exercise-meta">
                 <div class="reps">3 sets × 10-12 reps</div>
                 <div class="rest">Rest: 60-90s</div>
+                <div class="weight-input-container">
+                  <input
+                    type="number"
+                    class="weight-input"
+                    data-workout="D"
+                    data-exercise="4"
+                    placeholder="kg"
+                    onchange="saveExerciseWeight(this)"
+                    onclick="event.stopPropagation()"
+                  />
+                  <span class="weight-unit">kg</span>
+                  <div
+                    class="weight-history-indicator"
+                    id="weightIndicator-D-4"
+                  ></div>
+                </div>
               </div>
             </li>
-            <li class="exercise-item">
+            <li
+              class="exercise-item"
+              data-exercise="5"
+              role="button"
+              tabindex="0"
+              aria-pressed="false"
+              onclick="handleExerciseItemClick(this, event)"
+              onkeydown="
+                if (event.key === 'Enter' || event.key === ' ') {
+                  event.preventDefault();
+                  toggleExercise(this.querySelector('.exercise-check'), event);
+                }
+              "
+            >
+              <div
+                class="exercise-check"
+                onclick="toggleExercise(this, event)"
+                aria-hidden="true"
+              >
+                ✓
+              </div>
               <div style="flex: 1">
-                <div class="exercise-name">5. Seated Calf Raises</div>
+                <div
+                  class="exercise-name"
+                  contenteditable="true"
+                  data-workout="D"
+                  data-exercise="5"
+                  onblur="saveExerciseName(this)"
+                >
+                  5. Seated Calf Raises
+                </div>
                 <div class="exercise-details">Full stretch and contraction</div>
               </div>
               <div class="exercise-meta">
                 <div class="reps">4 sets × 15-20 reps</div>
                 <div class="rest">Rest: 60-90s</div>
+                <div class="weight-input-container">
+                  <input
+                    type="number"
+                    class="weight-input"
+                    data-workout="D"
+                    data-exercise="5"
+                    placeholder="kg"
+                    onchange="saveExerciseWeight(this)"
+                    onclick="event.stopPropagation()"
+                  />
+                  <span class="weight-unit">kg</span>
+                  <div
+                    class="weight-history-indicator"
+                    id="weightIndicator-D-5"
+                  ></div>
+                </div>
               </div>
             </li>
-            <li class="exercise-item">
+            <li
+              class="exercise-item"
+              data-exercise="6"
+              role="button"
+              tabindex="0"
+              aria-pressed="false"
+              onclick="handleExerciseItemClick(this, event)"
+              onkeydown="
+                if (event.key === 'Enter' || event.key === ' ') {
+                  event.preventDefault();
+                  toggleExercise(this.querySelector('.exercise-check'), event);
+                }
+              "
+            >
+              <div
+                class="exercise-check"
+                onclick="toggleExercise(this, event)"
+                aria-hidden="true"
+              >
+                ✓
+              </div>
               <div style="flex: 1">
-                <div class="exercise-name">6. Hanging Leg Raises (Core)</div>
+                <div
+                  class="exercise-name"
+                  contenteditable="true"
+                  data-workout="D"
+                  data-exercise="6"
+                  onblur="saveExerciseName(this)"
+                >
+                  6. Hanging Leg Raises (Core)
+                </div>
                 <div class="exercise-details">
                   Control the swing, lift with abs
                 </div>
@@ -1245,6 +1797,22 @@
               <div class="exercise-meta">
                 <div class="reps">3 sets × 12-15 reps</div>
                 <div class="rest">Rest: 60-90s</div>
+                <div class="weight-input-container">
+                  <input
+                    type="number"
+                    class="weight-input"
+                    data-workout="D"
+                    data-exercise="6"
+                    placeholder="kg"
+                    onchange="saveExerciseWeight(this)"
+                    onclick="event.stopPropagation()"
+                  />
+                  <span class="weight-unit">kg</span>
+                  <div
+                    class="weight-history-indicator"
+                    id="weightIndicator-D-6"
+                  ></div>
+                </div>
               </div>
             </li>
           </ul>
