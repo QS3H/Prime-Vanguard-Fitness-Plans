@@ -4,7 +4,7 @@ A personalized, interactive web-based fitness plan designed for body recompositi
 
 ## Live Link
 
-[Abdulrahman-Fitness-Plan](https://abdulrahmanfitnessplan.netlify.app/)
+[Abdulrahman-Fitness-Plan](https://qs3h.github.io/Prime-Vanguard-Fitness-Plans/Abdulrahman-Fitness-Plan/)
 
 ## Overview
 
@@ -29,7 +29,7 @@ This is a complete 4-week transformation program for Abdulrahman, part of the Pr
 
 ```
 Abdulrahman-Fitness-Plan/
-├── fitness-plan.html    # Main application file
+├── index.html           # Main application file
 ├── styles.css           # Styling and responsive design
 ├── script.js            # Interactive functionality and progress tracking
 ├── public/              # Static assets (logo, images)
@@ -40,7 +40,7 @@ Abdulrahman-Fitness-Plan/
 
 ### Quick Start
 
-1. Open `fitness-plan.html` in any modern web browser
+1. Open `index.html` in any modern web browser
 2. Navigate through sections using the top navigation bar
 3. Track workouts by clicking exercises to mark them complete
 4. Enter weights used for each exercise

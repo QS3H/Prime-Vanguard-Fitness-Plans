@@ -16,6 +16,8 @@ Prime Vanguard Fitness Plans provides individualized 4-week transformation progr
 
 ```
 Prime Vanguard Fitness Plans/
+├── public/                      # Shared static assets (logo, images)
+│   └── Prime_Vanguard-Logo.png
 ├── Abdelaziz-Fitness-Plan/      # Individual fitness plan for Abdelazzez
 │   ├── public/                  # Static assets (logo, images)
 │   │   └── Prime_Vanguard-Logo.png

@@ -6,6 +6,7 @@
     <title>Prime Vanguard - Fitness Plans</title>
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.16/index.min.css">
+    <link rel="icon" type="image/png" href="public/Prime_Vanguard-Logo.png">
     <style>
         * {
             margin: 0;
@@ -13,9 +14,23 @@
             box-sizing: border-box;
         }
         
+        :root {
+            --pv-navy: #0F172A;
+            --pv-navy-light: #1E293B;
+            --pv-gold: #D4AF37;
+            --pv-gold-light: #E5C158;
+            --pv-emerald: #10B981;
+            --pv-gray: #334155;
+            --pv-light: #F1F5F9;
+            --pv-text: #CBD5E1;
+            --pv-text-dark: #334155;
+            --pv-border: #E2E8F0;
+            --pv-bg: #F8FAFC;
+        }
+        
         body {
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            background: linear-gradient(135deg, var(--pv-navy) 0%, var(--pv-navy-light) 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -32,14 +47,22 @@
         .logo {
             font-size: 3rem;
             font-weight: 800;
-            color: #F8FAFC;
+            color: var(--pv-light);
             margin-bottom: 0.5rem;
             letter-spacing: 2px;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+        }
+        
+        .logo-image {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 1.5rem;
+            filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.3));
         }
         
         .tagline {
             font-size: 1.25rem;
-            color: #94A3B8;
+            color: var(--pv-text);
             margin-bottom: 3rem;
         }
         
@@ -52,10 +75,10 @@
         
         .plan-card {
             background: rgba(30, 41, 59, 0.8);
-            border: 1px solid rgba(148, 163, 184, 0.2);
+            border: 1px solid rgba(212, 175, 55, 0.2);
             border-radius: 16px;
             padding: 2rem;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
             cursor: pointer;
             text-decoration: none;
             color: inherit;
@@ -63,19 +86,19 @@
         
         .plan-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            border-color: rgba(148, 163, 184, 0.4);
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.2);
+            border-color: rgba(212, 175, 55, 0.5);
         }
         
         .plan-name {
             font-size: 1.5rem;
             font-weight: 700;
-            color: #F8FAFC;
+            color: var(--pv-light);
             margin-bottom: 0.5rem;
         }
         
         .plan-description {
-            color: #94A3B8;
+            color: var(--pv-text);
             font-size: 0.95rem;
             line-height: 1.6;
             margin-bottom: 1.5rem;
@@ -92,12 +115,12 @@
             background: rgba(15, 23, 42, 0.6);
             padding: 0.75rem 1.25rem;
             border-radius: 8px;
-            border: 1px solid rgba(148, 163, 184, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.1);
         }
         
         .stat-label {
             font-size: 0.75rem;
-            color: #64748B;
+            color: var(--pv-gray);
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
@@ -105,7 +128,7 @@
         .stat-value {
             font-size: 1.1rem;
             font-weight: 600;
-            color: #F8FAFC;
+            color: var(--pv-gold);
             margin-top: 0.25rem;
         }
         
@@ -113,21 +136,24 @@
             display: inline-block;
             margin-top: 1.5rem;
             padding: 0.75rem 2rem;
-            background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
-            color: white;
+            background: linear-gradient(135deg, var(--pv-gold) 0%, var(--pv-gold-light) 100%);
+            color: var(--pv-navy);
             font-weight: 600;
             border-radius: 8px;
             text-decoration: none;
-            transition: opacity 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
         }
         
         .cta-button:hover {
-            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <img src="public/Prime_Vanguard-Logo.png" alt="Prime Vanguard Logo" class="logo-image">
         <div class="logo">PRIME VANGUARD</div>
         <div class="tagline">Physical Mastery Brotherhood</div>
         
