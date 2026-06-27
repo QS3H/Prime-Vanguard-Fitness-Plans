@@ -16,6 +16,13 @@ Prime Vanguard Fitness Plans provides individualized 4-week transformation progr
 
 ```
 Prime Vanguard Fitness Plans/
+├── Abdelaziz-Fitness-Plan/      # Individual fitness plan for Abdelazzez
+│   ├── public/                  # Static assets (logo, images)
+│   │   └── Prime_Vanguard-Logo.png
+│   ├── index.html               # Main application file
+│   ├── script.js                # Interactive functionality and progress tracking
+│   ├── styles.css               # Styling and responsive design
+│   └── README.md                # Plan-specific documentation
 ├── Abdulrahman-Fitness-Plan/    # Individual fitness plan for Abdulrahman
 │   ├── public/                  # Static assets (logo, images)
 │   │   └── Prime_Vanguard-Logo.png
@@ -23,10 +30,21 @@ Prime Vanguard Fitness Plans/
 │   ├── script.js                # Interactive functionality and progress tracking
 │   ├── styles.css               # Styling and responsive design
 │   └── README.md                # Plan-specific documentation
+├── index.html                   # Landing page with links to all plans
+├── netlify.toml                 # Netlify deployment configuration
 └── README.md                    # This file
 ```
 
 ## Available Plans
+
+### Abdelazzez - 4-Week Fitness Transformation Plan
+
+- **Age**: 23 (Bio-Age: 31)
+- **Visceral Fat Index**: 14.9 → Target: Under 9
+- **Focus**: Body recomposition with 4-day upper/lower split
+- **Protocol**: Intermediate strength + hypertrophy training
+
+[View Abdelazzez's Plan](./Abdelaziz-Fitness-Plan/) | [Live Demo](https://prime-vanguard-fitness-plans.netlify.app/abdelaziz)
 
 ### Abdulrahman - 4-Week Fitness Transformation Plan
 
@@ -35,7 +53,7 @@ Prime Vanguard Fitness Plans/
 - **Long-Term Goal**: 88.4 kg
 - **Focus**: Body recomposition (lose fat, preserve/build muscle)
 
-[View Abdulrahman's Plan](./Abdulrahman-Fitness-Plan/) | [Live Demo](https://abdulrahmanfitnessplan.netlify.app/)
+[View Abdulrahman's Plan](./Abdulrahman-Fitness-Plan/) | [Live Demo](https://prime-vanguard-fitness-plans.netlify.app/abdulrahman)
 
 ## Features
 

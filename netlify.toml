@@ -1,7 +1,36 @@
 [build]
-  publish = "Abdulrahman-Fitness-Plan"
-  
+  publish = "."
+
 [[redirects]]
+  # Serve Abdelaziz plan at /abdelaziz path
+  from = "/abdelaziz/*"
+  to = "/Abdelaziz-Fitness-Plan/:splat"
+  status = 200
+  force = false
+
+[[redirects]]
+  # Serve Abdelaziz plan root
+  from = "/abdelaziz"
+  to = "/Abdelaziz-Fitness-Plan/index.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  # Serve Abdulrahman plan at /abdulrahman path
+  from = "/abdulrahman/*"
+  to = "/Abdulrahman-Fitness-Plan/:splat"
+  status = 200
+  force = false
+
+[[redirects]]
+  # Serve Abdulrahman plan root
+  from = "/abdulrahman"
+  to = "/Abdulrahman-Fitness-Plan/index.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  # Root redirect to landing page (or choose one as default)
   from = "/*"
   to = "/index.html"
   status = 200
