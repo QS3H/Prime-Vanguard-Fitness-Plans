@@ -30,7 +30,7 @@ Prime Vanguard Fitness Plans/
 │   ├── script.js                # Interactive functionality and progress tracking
 │   ├── styles.css               # Styling and responsive design
 │   └── README.md                # Plan-specific documentation
-├── netlify.toml                 # Netlify deployment configuration
+├── index.html                   # Landing page with links to all plans
 └── README.md                    # This file
 ```
 
@@ -43,7 +43,7 @@ Prime Vanguard Fitness Plans/
 - **Focus**: Body recomposition with 4-day upper/lower split
 - **Protocol**: Intermediate strength + hypertrophy training
 
-[View Abdelazzez's Plan](./Abdelaziz-Fitness-Plan/)
+[View Abdelazzez's Plan](./Abdelaziz-Fitness-Plan/) | [Live on GitHub Pages](https://qs3h.github.io/Prime-Vanguard-Fitness-Plans/Abdelaziz-Fitness-Plan/)
 
 ### Abdulrahman - 4-Week Fitness Transformation Plan
 
@@ -52,7 +52,7 @@ Prime Vanguard Fitness Plans/
 - **Long-Term Goal**: 88.4 kg
 - **Focus**: Body recomposition (lose fat, preserve/build muscle)
 
-[View Abdulrahman's Plan](./Abdulrahman-Fitness-Plan/)
+[View Abdulrahman's Plan](./Abdulrahman-Fitness-Plan/) | [Live on GitHub Pages](https://qs3h.github.io/Prime-Vanguard-Fitness-Plans/Abdulrahman-Fitness-Plan/)
 
 ## Features
 
