@@ -5,12 +5,15 @@ A collection of personalized, interactive web-based fitness transformation plans
 ## Overview
 
 Prime Vanguard Fitness Plans provides individualized 4-week transformation programs with:
+
 - **Interactive Workout Tracking**: Track exercise completion and weights with visual progress indicators
 - **Body Analysis Dashboard**: View current stats, targets, and critical health metrics
 - **Customizable Exercises**: Edit exercise names directly in the interface
 - **Progress Management**: Export/import progress data for backup and device transfer
 - **Print-Ready Design**: Optimized for printing to PDF or physical copies
 - **Mobile Responsive**: Works seamlessly on desktop and mobile devices
+
+[Live Landing Page](https://qs3h.github.io/Prime-Vanguard-Fitness-Plans/)
 
 ## Repository Structure
 
@@ -59,17 +62,20 @@ Prime Vanguard Fitness Plans/
 ## Features
 
 ### Workout Tracking
+
 - Click checkmarks to mark exercises complete
 - Progress bars update automatically
 - Reset progress with one click
 - Weight logging for each exercise
 
 ### Data Management
+
 - **Sync**: Save progress to browser local storage
 - **Export**: Download progress as JSON for backup
 - **Import**: Load previously exported progress files
 
 ### Customization
+
 - Exercise names are editable inline
 - Changes save automatically
 - Personalized meal plans and macros
@@ -79,6 +85,7 @@ Prime Vanguard Fitness Plans/
 ### Why Full Body Workouts?
 
 Full body training 3x/week is optimal for transformation because:
+
 - Maximizes fat loss through greater muscle engagement
 - Faster skill learning with 3x/week practice
 - Joint protection with lower per-session volume
@@ -106,6 +113,7 @@ Full body training 3x/week is optimal for transformation because:
 ### Browser Compatibility
 
 Works in all modern browsers:
+
 - Chrome/Edge (recommended)
 - Firefox
 - Safari
@@ -150,4 +158,4 @@ These fitness plans are designed for educational purposes. Consult with a health
 
 **Prime Vanguard - Physical Mastery Brotherhood**
 
-*"Excellence is not an act, but a habit"*
+_"Excellence is not an act, but a habit"_
